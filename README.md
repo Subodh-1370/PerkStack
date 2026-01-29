@@ -248,11 +248,13 @@ Both backend and frontend must run simultaneously.
 
 Start Backend Server
 npm run server
+
 Backend runs on:
 http://localhost:5000
 
 Start Frontend Client
 npm run client
+
 Frontend runs on:
 http://localhost:3000
 
