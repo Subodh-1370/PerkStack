@@ -242,6 +242,19 @@ Building PerkStack taught me:
 - API integration and error handling
 - Professional UI/UX implementation
 
----
+## ▶️ Running the Application
 
-**Note**: This is a portfolio project demonstrating technical skills. For production use, additional security, testing, and monitoring would be required.
+Both backend and frontend must run simultaneously.
+
+Start Backend Server
+ "npm run server"
+
+Backend runs on:
+http://localhost:5000
+
+Start Frontend Client
+ "npm run client"
+
+Frontend runs on:
+http://localhost:3000
+
