@@ -28,7 +28,7 @@ export default function RegisterPage() {
 
   return (
     <Layout>
-      <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-100 via-pink-50 to-indigo-100">
         <AuthForm
           type="register"
           onSubmit={handleRegister}

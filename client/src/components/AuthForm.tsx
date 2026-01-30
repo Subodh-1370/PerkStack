@@ -38,7 +38,7 @@ export default function AuthForm({ type, onSubmit, loading, error }: AuthFormPro
       transition={{ duration: 0.6 }}
       className="max-w-md w-full mx-auto"
     >
-      <div className="bg-white rounded-xl shadow-lg p-8">
+      <div className="bg-white/90 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-white/20">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
           {type === 'login' ? 'Sign In' : 'Create Account'}
         </h2>
@@ -128,10 +128,10 @@ export default function AuthForm({ type, onSubmit, loading, error }: AuthFormPro
             disabled={loading}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className={`w-full py-3 px-4 rounded-lg font-semibold text-white transition-colors ${
+            className={`w-full py-3 px-4 rounded-lg font-semibold text-white transition-all shadow-lg ${
               loading
                 ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-blue-600 hover:bg-blue-700'
+                : 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700'
             }`}
           >
             {loading ? 'Please wait...' : type === 'login' ? 'Sign In' : 'Create Account'}
@@ -143,7 +143,7 @@ export default function AuthForm({ type, onSubmit, loading, error }: AuthFormPro
             {type === 'login' ? "Don't have an account? " : 'Already have an account? '}
             <Link
               href={type === 'login' ? '/register' : '/login'}
-              className="text-blue-600 hover:text-blue-700 font-medium"
+              className="text-purple-600 hover:text-purple-700 font-medium"
             >
               {type === 'login' ? 'Sign Up' : 'Sign In'}
             </Link>
